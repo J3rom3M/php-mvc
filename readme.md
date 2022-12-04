@@ -1,4 +1,4 @@
-# Comment attaquer un nouveau projet en MVC et révisions de notions.
+# Comment attaquer un nouveau projet en PHP MVC:
 
 
 Ce repository vous référence très succintement quelques astuces pour bien commencer un projet MVC ainsi que des révisions sur quelques notions.
@@ -41,7 +41,7 @@ D'un coup d'oeil on devine ce qu'il y a dans nos dossiers comme ça.
     - layout
       - footer.tpl.php
       - header.tpl.php
-  - config.ini <- *Contient nos informations de connexion à la BDD, il n'est pas `gité`, c'est à dire qu'il ne sera pas pousser sur github par exemple lors de `git push`*
+  - config.ini <- *Contient nos informations de connexion à la BDD, il n'est pas `gité`, c'est à dire qu'il ne sera pas poussé sur github par exemple lors de `git push`*
   - config.ini.dit <- *template de base pour créer le `config.ini`, qui lui est gité.*
 - public <- LE dossier qui sera la racine de notre site une fois en ligne
   - .htaccess <- *permet notamment de rediriger toutes les urls sur le fichier `index.php`*

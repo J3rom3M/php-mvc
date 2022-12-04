@@ -13,4 +13,8 @@ class HomeController extends CoreController {
         // On gère l'affichage
         $this->show('home/home');
     }
+
+    public function modal(){
+        $this->show('home/modal');
+    }
 }
