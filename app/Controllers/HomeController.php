@@ -15,6 +15,6 @@ class HomeController extends CoreController {
     }
 
     public function modal(){
-        $this->show('home/modal');
+        $this->showNoLayout('home/modal');
     }
 }

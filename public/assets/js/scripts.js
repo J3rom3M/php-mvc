@@ -1,3 +1,5 @@
+window.htmx = require('htmx.org');
+
 function closeModal() {
 	var container = document.getElementById("modals-here")
 	var backdrop = document.getElementById("modal-backdrop")

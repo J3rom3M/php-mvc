@@ -1,11 +1,19 @@
 
 
-<main>
+<main id="resonsive-div">
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
         <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h1 class="display-4 fw-normal">PHP MVC PROJECT</h1>
-            <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
-            <button hx-post="/clicked" hx-swap="outerHTML" class="btn btn-outline-secondary">Coming soon</button>
+            <h1 class="pt-5 display-4 fw-normal">PHP MVC PROJECT</h1>
+            <p class="lead fw-normal">htmx gives you access to AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, using attributes, so you can build modern user interfaces with the simplicity and power of hypertext.</p>
+            <button 
+                hx-get="/modal" 
+                hx-target="#modals-here" 
+                hx-trigger="click"
+                hx-swap="outerHTML"
+                class="btn btn-outline-secondary"
+                _="on htmx:afterOnLoad wait 10ms then add .show to #modal then add .show to #modal-backdrop">Coming soon</button>
+
+            <div id="modals-here"></div>
         </div>
         <div class="product-device shadow-sm d-none d-md-block"></div>
         <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>

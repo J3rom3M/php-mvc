@@ -52,6 +52,7 @@ else {
 // ? $router->map( 'GET', '/', '\App\Controllers\ControllerExample::methodeExample', 'routeNameExample' );
 $router->map( 'GET', '/', '\App\Controllers\HomeController::home', 'Home-home' );
 $router->map( 'GET', '/modal', '\App\Controllers\HomeController::modal', 'Home-modal' );
+$router->map( 'GET', '/tour', '\App\Controllers\PageController::tour', 'Page-tour' );
 
 // Exemple route avec paramètre
 // ? $router->map( 'GET', '/see/[i:id]', '\App\Controllers\ControllerExample::methodeExample', 'routeNameExample' );
